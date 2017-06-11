@@ -1,5 +1,9 @@
 import java.util.concurrent.locks.*;
 
+/**
+ * 读写互斥，上读锁的目的是哥读的时候不让别人写
+ * 上写锁即防读也防写，哥写的时候你们表来捣乱：读写都不行
+ */
 
 class Reader implements Runnable{
     public void run(){
