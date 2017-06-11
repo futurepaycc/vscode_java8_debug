@@ -1,6 +1,9 @@
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/**
+ * ReentrantLock 相当于linux线程下的互斥量
+ */
 class PrintDemo {
     private final Lock queueLock = new ReentrantLock();
 
