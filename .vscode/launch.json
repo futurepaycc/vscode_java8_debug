@@ -3,28 +3,15 @@
     "configurations": [
         {
             "name": "Java",
+            "jdkPath": "/opt/idea-jdk/bin",
             "type": "java",
             "request": "launch",
             "stopOnEntry": false,
             "cwd": "${fileDirname}",
             "startupClass": "${fileBasename}",
-            "options": [
-                "-classpath",
+            "classpath": [
                 "bin"
             ]
-        },
-        {
-            "name": "Java Console App",
-            "type": "java",
-            "request": "launch",
-            "stopOnEntry": false,
-            "cwd": "${fileDirname}",
-            "startupClass": "${fileBasename}",
-            "options": [
-                "-classpath",
-                "bin"
-            ],
-            "externalConsole": true
         }
     ]
 }

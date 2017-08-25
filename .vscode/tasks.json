@@ -5,7 +5,7 @@
     "tasks": [
         {
             "taskName": "build",
-            "command": "javac",
+            "command": "javac8",
             "isBuildCommand": true,
             "args": ["-g","-verbose","-d","bin","${file}"], //不能写成"-d bin"
             "suppressTaskName": true
